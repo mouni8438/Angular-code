@@ -1,0 +1,44 @@
+{
+  "identifier": "org.zowe.zlux.sample.angular",
+  "apiVersion": "1.0.0",
+  "pluginVersion": "1.1.0",
+  "pluginType": "application",
+  "webContent": {
+    "framework": "angular2",
+    "launchDefinition": {
+      "pluginShortNameKey": "sampleangular",
+      "pluginShortNameDefault": "Angular Sample",
+      "imageSrc": "assets/icon.png"
+    },
+    "descriptionKey": "sampleangulardescription",
+    "descriptionDefault": "Sample App Showcasing Angular Adapter",
+    "isSingleWindowApp": true,
+    "defaultWindowStyle": {
+      "width": 850,
+      "height": 450
+    }
+  },
+  "dataServices": [
+    {
+      "type": "router",
+      "name": "hello",
+      "filename": "helloWorld.js",
+      "routerFactory": "helloWorldRouter",
+      "dependenciesIncluded": true,
+      "initializerLookupMethod": "external",
+      "version": "1.0.1"
+    }
+  ],
+  "configurationData": {
+    "resources": {
+      "requests": {
+        "aggregationPolicy": "override",
+        "subResources": {
+          "app": {
+            "aggregationPolicy": "override"
+          }
+        }
+      }
+    }
+  }
+}
